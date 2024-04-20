@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../fonts/Source\ Sans\ Pro.woff2);
+}
+body {
+    cursor: grab;
+}
+.main-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    cursor: progress;
+    position: relative;
+}
+    /* .overlay {
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+
+    }
+    .overlay:hover {
+        display: none;
+        backdrop-filter: blur(2px);
+    } */
+
+.title h1 {
+    font-family: "Source Sans Pro";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: #122118;
+}
+.title span {
+    font-family: "Source Sans Pro";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: #2FCD70;
+}
+.wrapper p {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    color: gray;
+}
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card-info {
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px 0px #0000000A;
+
+}
+.card-info:hover {
+    transform: scale(1.3);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.card {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 5px 20px;
+}
+.card-box span {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: gray;
+    display: inline-block;
+}
+.card-box strong {
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #020202;
+    display: inline-block;
+}
+.card-box {
+    max-width: 189px;
+    width: 100%;
+}
+.card-text {
+    max-width: 300px;
+    padding: 10px 0 ;
+}
+.card-text span {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    color: gray;
+    text-align: center;
+}
+.card-link {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.card-link span {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2FCD70;
+}
+.card-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-image {
+    position: relative;
+    max-width: 141px;
+    width: 100%;
+}
+.card-image::after{
+    content: "+";
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    color: #fff;
+    background-color: #FD865B;
+}
+.card-image img:first-child {
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+.card-image img:nth-child(2) {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+.card-image img:nth-child(3) {
+    position: absolute;
+    top: -15px;
+    left: 35px;
+}
+.card-image img:nth-child(4) {
+    position: absolute;
+    top: -15px;
+    left: 50px;
+}
+.card-image img:nth-child(5) {
+    position: absolute;
+    top: -15px;
+    left: 65px;
+}
+.card-image img:nth-child(6) {
+    position: absolute;
+    top: -15px;
+    left: 80px;
+}
+@media only screen and (max-width: 999px) {
+    .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-info {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-info {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 290px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 230px)  {
+    .title {
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 190px) {
+    .title{
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 170px) {
+    .title{
+        text-align: center;
+    }
+
+}
